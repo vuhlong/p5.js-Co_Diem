@@ -73,6 +73,16 @@ class AI {
   		}
   	}
 
+    if (m[2] == undefined && m[3] == undefined) {
+      if (s.state.bp - this.state.bp == 1) {
+        m[2] = 7;
+        m[3] = 0;
+      } else {
+        m[2] = 0;
+        m[3] = 0;
+      }
+    }
+
     let eatPoint = true;
     let x = m[0];
     let y = m[1];
